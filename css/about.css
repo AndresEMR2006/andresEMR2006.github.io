@@ -4,8 +4,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #fcf9f2;
-  color: #1a1a1a;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
   padding: 80px 40px;
   gap: 60px;
 }
@@ -18,11 +18,11 @@
 #button-about {
   display: inline-flex;
   align-items: center;
-  background-color: #c8f24a;
+  background-color: var(--lime);
   border: none;
   border-radius: 25px;
   font-weight: bold;
-  color: black;
+  color: var(--black);
   padding: 8px 16px;
   font-size: 12px;
   margin-bottom: 20px;
@@ -33,13 +33,13 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #1a1a1a;
+  color: var(--text-dark);
 }
 
 .about-text {
   font-size: 15px;
   line-height: 1.6;
-  color: #555555;
+  color: var(--text-soft);
 }
 
 /* Lista de proyectos */
@@ -51,7 +51,7 @@
 #projects-container h4 {
   font-size: 11px;
   font-weight: bold;
-  color: #777777;
+  color: var(--text-subtle);
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
@@ -66,7 +66,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 0;
-  border-top: 1px solid #dcd6cd;
+  border-top: 1px solid var(--border-soft);
   text-decoration: none;
   color: inherit;
   transition: opacity 0.2s ease;
@@ -74,12 +74,12 @@
 }
 
 .projects-list .project-item:last-child {
-  border-bottom: 1px solid #dcd6cd;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .project-number {
   font-size: 13px;
-  color: #888888;
+  color: var(--text-extra-soft);
   font-weight: 500;
 }
 
@@ -92,23 +92,23 @@
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 4px 0;
-  color: #1a1a1a;
+  color: var(--text-dark);
   letter-spacing: normal;
 }
 
 .project-info p {
   font-size: 13px;
-  color: #666666;
+  color: var(--text-muted);
   margin: 0;
 }
 
 .project-meta {
   font-size: 12px;
-  color: #666666;
+  color: var(--text-muted);
 }
 
 .project-meta.actual {
-  color: #e05638;
+  color: var(--orange-alert);
   font-weight: 600;
 }
 

@@ -1,8 +1,8 @@
 /* Sección de la caja de herramientas */
 #toolbox {
-  background-color: #fcf9f2;
+  background-color: var(--bg-cream);
   padding: 30px 0 60px;
-  color: #1a1a1a;
+  color: var(--text-dark);
 }
 
 .container {
@@ -20,8 +20,8 @@
 
 .badge-toolbox {
   display: inline-block;
-  background-color: #d1b3ff;
-  color: #1a1a1a;
+  background-color: var(--purple-badge);
+  color: var(--text-dark);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 11px;
@@ -40,7 +40,7 @@
 .toolbox-subtitle {
   max-width: 280px;
   font-size: 14px;
-  color: #666;
+  color: var(--text-muted);
   line-height: 1.5;
   margin: 0;
 }
@@ -101,24 +101,27 @@
 }
 
 .tool-card.green {
-  background-color: #c8f24a;
+  background-color: var(--lime);
 }
+
 .tool-card.purple {
-  background-color: #d6ccff;
+  background-color: var(--purple-soft);
 }
+
 .tool-card.white {
-  background-color: #fff;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.03);
+  background-color: var(--white);
+  box-shadow: 0 8px 22px var(--shadow-soft);
 }
+
 .tool-card.orange {
-  background-color: #ff6b4a;
-  color: white;
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .tool-card.orange .card-top span,
 .tool-card.orange .card-content h3,
 .tool-card.orange .card-content li {
-  color: white;
+  color: var(--white);
 }
 
 @media (max-width: 1100px) {
