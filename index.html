@@ -1,11 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Prueba</h1>
-</body>
+  <head>
+    <!-- Meta datos-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/introduccion.css" />
+
+    <!-- Tab -->
+    <title>Andres Meneses</title>
+  </head>
+  <body>
+    <header>
+      <!-- Barra de navegacion-->
+      <nav id="navegation">
+        <p id="name">Andres Meneses®</p>
+        <ul id="links">
+          <li>Sobre mí</li>
+          <li>Proyectos</li>
+          <li>Recursos</li>
+          <li>Blog</li>
+          <li class="button">Hablemos ↗</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="introduction">
+        <div id="text">
+          <h4 class="verde">DISPONIBLE PARA COLABORAR · 2026</h4>
+          <h1>
+            Diseño arquitecturas de software y desarrollo soluciones eficientes.
+          </h1>
+          <p>
+            Soy ingeniero de software. Me apasiona resolver problemas complejos
+            a través de código limpio, optimización de algoritmos y el
+            desarrollo de sistemas tecnológicos robustos.
+          </p>
+          <div id="buttons">
+            <a class="button">Conoce mi trabajo ↗</a>
+            <a class="secondary-button">Descarga mi CV ↗</a>
+          </div>
+        </div>
+
+        <!-- Contenedor con la imagen y el badge flotante -->
+        <div id="profile-card">
+          <img
+            src="./images/stock_vertical.jpg"
+            alt="profile"
+            class="profile-image"
+          />
+          <div class="floating-badge">
+            <span>AHORA CREANDO</span>
+            <h3>Atlas de ideas cotidianas ↗</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>

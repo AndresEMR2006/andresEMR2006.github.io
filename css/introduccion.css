@@ -1,0 +1,116 @@
+/* Sección de Introducción (Hero) */
+#introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a211a;
+  padding: 60px 40px;
+  gap: 60px;
+}
+
+#introduction #text {
+  max-width: 550px;
+}
+
+#introduction h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+#introduction p {
+  font-size: 15px;
+  color: #b0b5b0;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.verde {
+  color: #c8f24a;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 0px;
+}
+
+/* Botones */
+#buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.button {
+  background-color: #c8f24a;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.secondary-button {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  opacity: 0.8;
+}
+
+/* Tarjeta de Perfil con Imagen y Elemento Flotante */
+#profile-card {
+  position: relative; /* Clave para posicionar el badge flotante dentro */
+  width: 380px;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden; /* Corta la imagen para adaptarla a las esquinas redondeadas */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caja de texto flotante sobre la imagen */
+.floating-badge {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c8f24a;
+  color: black;
+  padding: 18px 20px;
+  border-radius: 16px;
+  max-width: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-badge span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.floating-badge h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}

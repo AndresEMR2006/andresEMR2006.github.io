@@ -1,0 +1,26 @@
+/* Barra de navegación */
+#navegation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a211a;
+  color: white;
+  padding: 20px 40px;
+}
+
+#navegation p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#navegation #links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#navegation li {
+  list-style-type: none;
+  font-size: 13px;
+  cursor: pointer;
+}
