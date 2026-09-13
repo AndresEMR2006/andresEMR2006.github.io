@@ -1,7 +1,28 @@
+:root {
+  --bg-dark: #1a211a;
+  --bg-cream: #fcf9f2;
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #1a1a1a;
+  --text-soft: #555555;
+  --text-muted: #666666;
+  --text-light: #b0b5b0;
+  --text-subtle: #777777;
+  --text-extra-soft: #888888;
+  --border-soft: #dcd6cd;
+  --lime: #c8f24a;
+  --purple-soft: #d6ccff;
+  --purple-badge: #d1b3ff;
+  --orange: #ff6b4a;
+  --orange-alert: #e05638;
+  --shadow-soft: rgba(0, 0, 0, 0.03);
+  --shadow-strong: rgba(0, 0, 0, 0.4);
+}
+
 /* Estilos globales */
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
-  background-color: #1a211a;
-  color: white;
+  background-color: var(--bg-dark);
+  color: var(--white);
 }

@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a211a;
+  background-color: var(--bg-dark);
   padding: 20px 40px;
   gap: 40px;
 }
@@ -16,7 +16,7 @@
 #introduction h1 {
   font-size: 48px;
   font-weight: 700;
-  color: white;
+  color: var(--white);
   margin-top: 10px;
   margin-bottom: 20px;
   line-height: 1.1;
@@ -24,13 +24,13 @@
 
 #introduction p {
   font-size: 15px;
-  color: #b0b5b0;
+  color: var(--text-light);
   margin-bottom: 30px;
   line-height: 1.5;
 }
 
 .verde {
-  color: #c8f24a;
+  color: var(--lime);
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -46,12 +46,12 @@
 }
 
 .button {
-  background-color: #c8f24a;
+  background-color: var(--lime);
   border: none;
   border-radius: 25px;
   font-weight: bold;
   font-size: 14px;
-  color: black;
+  color: var(--black);
   padding: 12px 24px;
   text-decoration: none;
   cursor: pointer;
@@ -59,7 +59,7 @@
 }
 
 .secondary-button {
-  color: white;
+  color: var(--white);
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
@@ -78,7 +78,7 @@
   height: 500px;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px var(--shadow-strong);
   flex-shrink: 0;
 }
 
@@ -94,8 +94,8 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: #c8f24a;
-  color: black;
+  background-color: var(--lime);
+  color: var(--black);
   padding: 18px 20px;
   border-radius: 16px;
   max-width: 220px;
