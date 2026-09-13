@@ -1,12 +1,12 @@
-/* Sección de Introducción (Hero) */
+/* Sección de introducción */
 #introduction {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a211a;
-  padding: 60px 40px;
-  gap: 60px;
+  background-color: var(--bg-dark);
+  padding: 20px 40px;
+  gap: 40px;
 }
 
 #introduction #text {
@@ -16,7 +16,7 @@
 #introduction h1 {
   font-size: 48px;
   font-weight: 700;
-  color: white;
+  color: var(--white);
   margin-top: 10px;
   margin-bottom: 20px;
   line-height: 1.1;
@@ -24,13 +24,13 @@
 
 #introduction p {
   font-size: 15px;
-  color: #b0b5b0;
+  color: var(--text-light);
   margin-bottom: 30px;
   line-height: 1.5;
 }
 
 .verde {
-  color: #c8f24a;
+  color: var(--lime);
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -44,38 +44,41 @@
   align-items: center;
   gap: 15px;
 }
+
 .button {
-  background-color: #c8f24a;
+  background-color: var(--lime);
   border: none;
   border-radius: 25px;
   font-weight: bold;
   font-size: 14px;
-  color: black;
+  color: var(--black);
   padding: 12px 24px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
 }
+
 .secondary-button {
-  color: white;
+  color: var(--white);
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
   padding: 12px 16px;
   cursor: pointer;
 }
+
 .secondary-button:hover {
   opacity: 0.8;
 }
 
-/* Tarjeta de Perfil con Imagen y Elemento Flotante */
+/* Tarjeta de perfil */
 #profile-card {
-  position: relative; /* Clave para posicionar el badge flotante dentro */
+  position: relative;
   width: 380px;
   height: 500px;
   border-radius: 24px;
-  overflow: hidden; /* Corta la imagen para adaptarla a las esquinas redondeadas */
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  box-shadow: 0 20px 40px var(--shadow-strong);
   flex-shrink: 0;
 }
 
@@ -86,13 +89,13 @@
   display: block;
 }
 
-/* Caja de texto flotante sobre la imagen */
+/* Badge flotante */
 .floating-badge {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: #c8f24a;
-  color: black;
+  background-color: var(--lime);
+  color: var(--black);
   padding: 18px 20px;
   border-radius: 16px;
   max-width: 220px;

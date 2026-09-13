@@ -1,0 +1,143 @@
+/* Sección de la caja de herramientas */
+#toolbox {
+  background-color: var(--bg-cream);
+  padding: 30px 0 60px;
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.toolbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.badge-toolbox {
+  display: inline-block;
+  background-color: var(--purple-badge);
+  color: var(--text-dark);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.toolbox-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.toolbox-subtitle {
+  max-width: 280px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.tool-card {
+  min-height: 340px;
+  height: auto;
+  border-radius: 26px;
+  padding: 0 22px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.card-top {
+  padding-top: 20px;
+  margin-bottom: 12px;
+}
+
+.card-top span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-content h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-content li {
+  font-size: 17px;
+  line-height: 1.35;
+  color: #2b2b2b;
+}
+
+.tool-card.green {
+  background-color: var(--lime);
+}
+
+.tool-card.purple {
+  background-color: var(--purple-soft);
+}
+
+.tool-card.white {
+  background-color: var(--white);
+  box-shadow: 0 8px 22px var(--shadow-soft);
+}
+
+.tool-card.orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.tool-card.orange .card-top span,
+.tool-card.orange .card-content h3,
+.tool-card.orange .card-content li {
+  color: var(--white);
+}
+
+@media (max-width: 1100px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
+  .toolbox-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 680px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
