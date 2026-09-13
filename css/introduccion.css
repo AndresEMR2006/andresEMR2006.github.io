@@ -1,4 +1,4 @@
-/* Sección de Introducción (Hero) */
+/* Sección de introducción */
 #introduction {
   display: flex;
   flex-direction: row;
@@ -44,6 +44,7 @@
   align-items: center;
   gap: 15px;
 }
+
 .button {
   background-color: #c8f24a;
   border: none;
@@ -56,6 +57,7 @@
   cursor: pointer;
   display: inline-block;
 }
+
 .secondary-button {
   color: white;
   font-weight: bold;
@@ -64,17 +66,18 @@
   padding: 12px 16px;
   cursor: pointer;
 }
+
 .secondary-button:hover {
   opacity: 0.8;
 }
 
-/* Tarjeta de Perfil con Imagen y Elemento Flotante */
+/* Tarjeta de perfil */
 #profile-card {
-  position: relative; /* Clave para posicionar el badge flotante dentro */
+  position: relative;
   width: 380px;
   height: 500px;
   border-radius: 24px;
-  overflow: hidden; /* Corta la imagen para adaptarla a las esquinas redondeadas */
+  overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   flex-shrink: 0;
 }
@@ -86,7 +89,7 @@
   display: block;
 }
 
-/* Caja de texto flotante sobre la imagen */
+/* Badge flotante */
 .floating-badge {
   position: absolute;
   bottom: 20px;
