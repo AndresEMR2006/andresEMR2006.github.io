@@ -13,6 +13,7 @@
   font-weight: bold;
 }
 
+/* Enlaces de navegación */
 #navegation #links {
   display: flex;
   align-items: center;

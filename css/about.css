@@ -1,0 +1,117 @@
+/* Sección general */
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fcf9f2;
+  color: #1a1a1a;
+  padding: 80px 40px;
+  gap: 60px;
+}
+
+/* Texto introductorio */
+#description {
+  max-width: 480px;
+}
+
+#button-about {
+  display: inline-flex;
+  align-items: center;
+  background-color: #c8f24a;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: black;
+  padding: 8px 16px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#description h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* Lista de proyectos */
+#projects-container {
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+#projects-container h4 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #777777;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-top: 1px solid #dcd6cd;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.projects-list .project-item:last-child {
+  border-bottom: 1px solid #dcd6cd;
+}
+
+.project-number {
+  font-size: 13px;
+  color: #888888;
+  font-weight: 500;
+}
+
+.project-info {
+  flex-grow: 1;
+  margin-left: 30px;
+}
+
+.project-info h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+  letter-spacing: normal;
+}
+
+.project-info p {
+  font-size: 13px;
+  color: #666666;
+  margin: 0;
+}
+
+.project-meta {
+  font-size: 12px;
+  color: #666666;
+}
+
+.project-meta.actual {
+  color: #e05638;
+  font-weight: 600;
+}
+
+.project-item:hover {
+  opacity: 0.7;
+}
